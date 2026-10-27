@@ -6,6 +6,14 @@
 
 [Vyzkoušet Živou tabuli](https://zivatabule.cz) · [Návody a inspirace do výuky](https://tipy.zivatabule.cz)
 
+## Od základní školy až po firemní školení
+
+Živá tabule najde využití na **základních i středních školách**. Pomáhá učitelům zapojovat žáky, organizovat aktivity a usnadňovat každodenní výuku.
+
+A nemusí zůstat jen ve škole. Hlasování, časovač, losování, rozdělování do skupin nebo sdílení odkazů přes QR kódy ocení také **lektoři při workshopech, kurzech a firemním vzdělávání**.
+
+**Stačí otevřít prohlížeč a můžete začít.**
+
 ## Funguje ve třídě. A chceme, aby fungovala dál.
 
 Živou tabuli vytváříme pro učitele, ne pro reklamu. **Nechceme na učitelích vydělávat, ale nemůžeme její provoz a vývoj donekonečna dotovat.** Hosting, údržba i další nástroje něco stojí. Proto hledáme školy, jednotlivce a firmy, kteří nám pomohou udržet Živou tabuli dostupnou pro všechny.
