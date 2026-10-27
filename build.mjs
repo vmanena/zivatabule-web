@@ -1,0 +1,10 @@
+import {readFile,writeFile,mkdir,copyFile} from 'node:fs/promises';
+import {marked} from 'marked';
+const markdown=await readFile('index.md','utf8');
+const template=await readFile('template.html','utf8');
+marked.setOptions({gfm:true,breaks:false});
+const html=template.replace('{{CONTENT}}',marked.parse(markdown));
+await mkdir('dist',{recursive:true});
+await writeFile('dist/index.html',html);
+await copyFile('style.css','dist/style.css');
+console.log('Built dist/index.html');
