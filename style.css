@@ -75,3 +75,7 @@
 .section-2>p:last-child,.section-3>p:last-child{margin-top:auto;padding-top:20px}
 .section-2>p:last-child>a:only-child,.section-3>p:last-child>a:only-child{margin-bottom:0}
 @media(max-width:800px){.support-card-icon{margin-bottom:18px}}
+
+/* Keep support symbols discreet and compact, including cached layout fallbacks */
+.content-section.section-2 .support-card-icon,.content-section.section-3 .support-card-icon{width:46px;height:46px;flex:0 0 46px;margin-bottom:16px;border-radius:12px;overflow:hidden}
+.content-section.section-2 .support-card-icon svg,.content-section.section-3 .support-card-icon svg{width:26px!important;height:26px!important;max-width:26px;max-height:26px;display:block}
