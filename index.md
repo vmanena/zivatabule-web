@@ -1,4 +1,4 @@
-# Živá tabule. Praktické nástroje, které učitelům usnadňují práci.
+# Živá tabule. Praktické nástroje, které učitelům i lektorům usnadňují práci.
 
 **Bez účtu. Bez reklam. Bez sledování. Pro všechny zdarma.**
 
