@@ -18,7 +18,10 @@ const benefitItems=[
 ];
 const benefits='<div class="benefits" aria-label="Výhody Živé tabule">'+benefitItems.map(([symbol,title,description])=>'<div class="benefit"><span class="benefit-icon">'+symbol+'</span><p><strong>'+title+'</strong><small>'+description+'</small></p></div>').join('')+'</div>';
 const installNote='<aside class="install-note"><span class="install-note-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M10 5h4"/><path d="M11 19h2"/></svg></span><div><strong>Živou tabuli můžete mít i jako aplikaci v mobilu nebo tabletu.</strong><p>Přidejte si ji na domovskou obrazovku a spouštějte ji pohodlně jako ostatní aplikace. Bez stahování z obchodu s aplikacemi.</p><a href="https://blog.zivatabule.cz/clanky/ziva-tabule-zije-i-ve-vasem-mobilu/">Návod na blogu →</a></div></aside>';
-const sections=chunks.map((chunk,i)=>'<section class="content-section section-'+i+'">'+chunk+'</section>');
+const cardIcon=(kind)=>kind==='school'
+?'<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 27V12l11-6 11 6v15"/><path d="M10 27V15h12v12M13 27v-7h6v7M3 27h26"/><path d="M14 12h4"/></svg>'
+:'<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="11" r="3"/><circle cx="22" cy="11" r="3"/><path d="M3 25v-3a7 7 0 0 1 12-5M29 25v-3a7 7 0 0 0-12-5"/><path d="m12 22 4-4 4 4m-4-4v10"/></svg>';
+const sections=chunks.map((chunk,i)=>'<section class="content-section section-'+i+'">'+((i===2||i===3)?'<div class="support-card-icon" aria-hidden="true">'+cardIcon(i===2?'school':'company')+'</div>':'')+chunk+'</section>');
 const html=template.replace('{{CONTENT}}',hero+benefits+installNote+'<div class="content-sections">'+sections.join('')+'</div>');
 await mkdir('dist/assets',{recursive:true});
 await writeFile('dist/index.html',html);
