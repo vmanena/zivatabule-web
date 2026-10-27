@@ -1,0 +1,30 @@
+name: Store original supporter logos
+on:
+  push:
+    paths:
+      - '.github/workflows/import-supporter-logos.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download six original logos
+        run: |
+          set -euo pipefail
+          mkdir -p assets/supporters
+          for name in zsuprkova-logo zs-kadanska-logo zs-brezova-logo zs-kresice-logo zs-ms-dolni-bela-logo pdf-upol-logo; do
+            curl --fail --location --retry 3 --silent --show-error "https://zivatabule.cz/${name}.png" -o "assets/supporters/${name}.png"
+            file "assets/supporters/${name}.png"
+          done
+      - name: Commit logos to repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/supporters/
+          if ! git diff --cached --quiet; then
+            git commit -m "Store six original supporter logos locally"
+            git push
+          fi
