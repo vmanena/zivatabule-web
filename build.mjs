@@ -22,7 +22,7 @@ const cardIcon=(kind)=>kind==='school'
 ?'<svg viewBox="0 0 32 32" width="26" height="26" style="width:26px;height:26px;display:block;flex:none" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 27V12l11-6 11 6v15"/><path d="M10 27V15h12v12M13 27v-7h6v7M3 27h26"/><path d="M14 12h4"/></svg>'
 :'<svg viewBox="0 0 32 32" width="26" height="26" style="width:26px;height:26px;display:block;flex:none" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="11" r="3"/><circle cx="22" cy="11" r="3"/><path d="M3 25v-3a7 7 0 0 1 12-5M29 25v-3a7 7 0 0 0-12-5"/><path d="m12 22 4-4 4 4m-4-4v10"/></svg>';
 const sections=chunks.map((chunk,i)=>'<section class="content-section section-'+i+'">'+((i===2||i===3)?'<div class="support-card-icon" aria-hidden="true" style="width:46px;height:46px;flex:0 0 46px;display:grid;place-items:center;overflow:hidden">'+cardIcon(i===2?'school':'company')+'</div>':'')+chunk+'</section>');
-const html=template.replace('{{CONTENT}}',hero+benefits+installNote+'<div class="content-sections">'+sections.join('')+'</div>');
+const html=template.replace('{{CONTENT}}',hero+benefits+'<div class="content-sections">'+sections.join('')+'</div>');
 await mkdir('dist/assets',{recursive:true});
 await writeFile('dist/index.html',html);
 await copyFile('style.css','dist/style.css');
