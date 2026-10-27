@@ -92,3 +92,11 @@
 .hero + .benefits{margin:12px 0 24px;padding:12px 8px 0}
 @media(max-width:900px){.hero + .benefits{margin:12px 0 22px;padding-top:10px}}
 @media(max-width:600px){.hero + .benefits{margin:8px 0 20px;padding:8px 0 0;row-gap:16px}}
+
+/* Original supporter logos: uniform visual rhythm, natural proportions */
+.supporter-logos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:24px 0 8px}
+.supporter-logo{display:flex;align-items:center;justify-content:center;min-height:116px;padding:18px 24px;background:#fff;border:1px solid #e3eee6;border-radius:16px;transition:border-color .2s,transform .2s}
+.supporter-logo:hover,.supporter-logo:focus-visible{border-color:#8abfa2;transform:translateY(-2px)}
+.supporter-logo img{display:block;width:100%;max-width:210px;height:80px;object-fit:contain}
+@media(max-width:700px){.supporter-logos{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.supporter-logo{min-height:100px;padding:14px}.supporter-logo img{height:70px}}
+@media(max-width:380px){.supporter-logo{padding:10px}.supporter-logo img{height:60px}}
