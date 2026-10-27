@@ -4,7 +4,7 @@
 
 Časovač, hlasování, losování, rozdělování do skupin, QR kódy a další drobnosti, které se ve třídě hodí každý den. Všechno na jednom místě, bez registrace a zbytečných překážek.
 
-[Vyzkoušet Živou tabuli](https://zivatabule.cz) · [Návody a inspirace do výuky](https://tipy.zivatabule.cz)
+[Vyzkoušet Živou tabuli](https://zivatabule.cz)
 
 **Živou tabuli provozuje a vyvíjí [Václav Maněna](https://manena.info) společně s dalšími učiteli z praxe.** Vycházíme z vlastních zkušeností s výukou a vytváříme nástroje, které sami potřebujeme a používáme.
 
