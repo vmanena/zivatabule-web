@@ -17,7 +17,7 @@ const benefitItems=[
  [icon('<path d="M4 4h16v16H4z"/><path d="M4 4l16 16"/><path d="M8 9h8m-8 4h4"/>'),'Bez reklam','Čisté a přehledné prostředí.']
 ];
 const benefits='<div class="benefits" aria-label="Výhody Živé tabule">'+benefitItems.map(([symbol,title,description])=>'<div class="benefit"><span class="benefit-icon">'+symbol+'</span><p><strong>'+title+'</strong><small>'+description+'</small></p></div>').join('')+'</div>';
-const installNote='<aside class="install-note"><span class="install-note-icon" aria-hidden="true">▣</span><div><strong>Živou tabuli můžete mít i jako aplikaci v mobilu nebo tabletu.</strong><p>Přidejte si ji na domovskou obrazovku a spouštějte ji pohodlně jako ostatní aplikace. Bez stahování z obchodu s aplikacemi.</p><a href="https://blog.zivatabule.cz">Jak Živou tabuli nainstalovat →</a></div></aside>';
+const installNote='<aside class="install-note"><span class="install-note-icon" aria-hidden="true">▣</span><div><strong>Živou tabuli můžete mít i jako aplikaci v mobilu nebo tabletu.</strong><p>Přidejte si ji na domovskou obrazovku a spouštějte ji pohodlně jako ostatní aplikace. Bez stahování z obchodu s aplikacemi.</p><a href="https://blog.zivatabule.cz">Návod na blogu →</a></div></aside>';
 const sections=chunks.map((chunk,i)=>'<section class="content-section section-'+i+'">'+chunk+'</section>');
 const html=template.replace('{{CONTENT}}',hero+benefits+'<div class="audience-strip"><span>Základní školy</span><span>Střední školy</span><span>Kurzy a firemní vzdělávání</span></div><div class="content-sections">'+sections.join('')+'</div>');
 await mkdir('dist/assets',{recursive:true});
