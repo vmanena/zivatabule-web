@@ -12,7 +12,7 @@ const hero='<section class="hero"><div class="hero-copy">'+chunks.shift()+'</div
 const icon=(paths)=>'<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+paths+'</svg>';
 const benefitItems=[
  [icon('<rect x="2" y="5" width="15" height="11" rx="2"/><path d="M7 20h5m-2-4v4"/><rect x="17" y="9" width="5" height="10" rx="1"/>'),'Funguje všude','Na tabuli, notebooku, tabletu i mobilu.'],
- [icon('<path d="M12 3v12m-4-4 4 4 4-4"/><path d="M4 17v3h16v-3"/>'),'Bez instalace','Stačí otevřít v prohlížeči.'],
+ [icon('<path d="M12 3v12m-4-4 4 4 4-4"/><path d="M4 17v3h16v-3"/>'),'Bez instalace z obchodu','Funguje v prohlížeči. Na mobilu či tabletu ji přidáte na plochu. <a href="https://blog.zivatabule.cz/clanky/ziva-tabule-zije-i-ve-vasem-mobilu/">Jak na to →</a>'],
  [icon('<circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/><path d="M18 5l2 2 3-3"/>'),'Bez registrace','Okamžitě a bez zbytečných kroků.'],
  [icon('<path d="M4 4h16v16H4z"/><path d="M4 4l16 16"/><path d="M8 9h8m-8 4h4"/>'),'Bez reklam','Čisté a přehledné prostředí.']
 ];
