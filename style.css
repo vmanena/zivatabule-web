@@ -61,3 +61,8 @@
 .audience-line{text-align:center;margin:8px 0 38px;color:#496a57;font-size:.98rem;line-height:1.8}
 .audience-line strong{color:#24543c;margin-right:8px}
 @media(max-width:600px){.audience-line{font-size:.92rem;margin:8px 0 28px}.audience-line strong{display:block;margin:0 0 3px}}
+
+/* Accessible button hover/focus contrast, including inverted CTA on dark panel */
+.content-section>p:last-child>a:only-child:hover,.content-section>p:last-child>a:only-child:focus-visible{color:#fff;background:#0d5138}
+.section-1>p:last-child>a:only-child:hover,.section-1>p:last-child>a:only-child:focus-visible{color:#0b5035;background:#e2f4e8}
+.hero p:nth-of-type(3) a:first-child:hover,.hero p:nth-of-type(3) a:first-child:focus-visible{color:#fff;background:#0d5138}
