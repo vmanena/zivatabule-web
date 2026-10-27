@@ -25,8 +25,8 @@ const supporterLogos=[
  ['zsuprkova-logo.png','ZŠ Úprkova, Hradec Králové','https://zsuprkova.cz/'],
  ['zs-kadanska-logo.png','ZŠ Kadaňská, Cheb','https://www.4zscv.cz/'],
  ['zs-brezova-logo.png','ZŠ a MŠ Březová','https://skolybrezova.eu/'],
- ['zs-kresice-logo.png','ZŠ Křešice','https://zivatabule.cz/podpora'],
- ['zs-ms-dolni-bela-logo.png','ZŠ a MŠ Dolní Bělá','https://zivatabule.cz/podpora'],
+ ['zs-kresice-logo.png','ZŠ Křešice','https://www.zskresice.cz/'],
+ ['zs-ms-dolni-bela-logo.png','ZŠ a MŠ Dolní Bělá','https://www.zsamsdolnibela.cz/'],
  ['pdf-upol-logo.png','Pedagogická fakulta Univerzity Palackého','https://www.pdf.upol.cz/']
 ];
 const supporterGallery='<div class="supporter-logos" aria-label="Školy a instituce podporující Živou tabuli">'+supporterLogos.map(([file,name,url])=>'<a class="supporter-logo" href="'+url+'" target="_blank" rel="noopener noreferrer" aria-label="'+name+'"><img src="https://zivatabule.cz/'+file+'" alt="'+name+'" loading="lazy"></a>').join('')+'</div>';
