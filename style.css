@@ -79,3 +79,9 @@
 /* Keep support symbols discreet and compact, including cached layout fallbacks */
 .content-section.section-2 .support-card-icon,.content-section.section-3 .support-card-icon{width:46px;height:46px;flex:0 0 46px;margin-bottom:16px;border-radius:12px;overflow:hidden}
 .content-section.section-2 .support-card-icon svg,.content-section.section-3 .support-card-icon svg{width:26px!important;height:26px!important;max-width:26px;max-height:26px;display:block}
+
+/* Discreet mobile-installation note below the four benefits */
+.install-note-inline{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px 9px;margin:0 0 34px;padding:0 12px;background:none;border:0;color:#536e5d;font-size:.92rem;line-height:1.5;text-align:center}
+.install-note-inline svg{width:18px;height:18px;flex:none;color:#608776}
+.install-note-inline a{font-weight:650;color:#176c4c;white-space:nowrap}
+@media(max-width:600px){.install-note-inline{margin-bottom:26px;padding:0 6px;font-size:.88rem}}
