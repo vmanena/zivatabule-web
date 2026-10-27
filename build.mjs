@@ -18,7 +18,7 @@ const benefitItems=[
 ];
 const benefits='<div class="benefits" aria-label="Výhody Živé tabule">'+benefitItems.map(([symbol,title,description])=>'<div class="benefit"><span class="benefit-icon">'+symbol+'</span><p><strong>'+title+'</strong><small>'+description+'</small></p></div>').join('')+'</div>';
 const sections=chunks.map((chunk,i)=>'<section class="content-section section-'+i+'">'+chunk+'</section>');
-const html=template.replace('{{CONTENT}}',hero+'<div class="audience-strip"><span>Základní školy</span><span>Střední školy</span><span>Kurzy a firemní vzdělávání</span></div><div class="content-sections">'+sections.join('')+'</div>');
+const html=template.replace('{{CONTENT}}',hero+benefits+'<div class="audience-strip"><span>Základní školy</span><span>Střední školy</span><span>Kurzy a firemní vzdělávání</span></div><div class="content-sections">'+sections.join('')+'</div>');
 await mkdir('dist/assets',{recursive:true});
 await writeFile('dist/index.html',html);
 await copyFile('style.css','dist/style.css');
