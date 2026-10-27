@@ -85,3 +85,5 @@
 .install-note-inline svg{width:18px;height:18px;flex:none;color:#608776}
 .install-note-inline a{font-weight:650;color:#176c4c;white-space:nowrap}
 @media(max-width:600px){.install-note-inline{margin-bottom:26px;padding:0 6px;font-size:.88rem}}
+
+.benefits .benefit small a{color:#176c4c;font-weight:700;text-decoration:underline;text-underline-offset:2px}
