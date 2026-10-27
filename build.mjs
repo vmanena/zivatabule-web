@@ -19,7 +19,7 @@ const benefitItems=[
 const benefits='<div class="benefits" aria-label="Výhody Živé tabule">'+benefitItems.map(([symbol,title,description])=>'<div class="benefit"><span class="benefit-icon">'+symbol+'</span><p><strong>'+title+'</strong><small>'+description+'</small></p></div>').join('')+'</div>';
 const installNote='<aside class="install-note"><span class="install-note-icon" aria-hidden="true">▣</span><div><strong>Živou tabuli můžete mít i jako aplikaci v mobilu nebo tabletu.</strong><p>Přidejte si ji na domovskou obrazovku a spouštějte ji pohodlně jako ostatní aplikace. Bez stahování z obchodu s aplikacemi.</p><a href="https://blog.zivatabule.cz">Návod na blogu →</a></div></aside>';
 const sections=chunks.map((chunk,i)=>'<section class="content-section section-'+i+'">'+chunk+'</section>');
-const html=template.replace('{{CONTENT}}',hero+benefits+installNote+'<p class="audience-line"><strong>Pro koho je Živá tabule?</strong> Základní školy · Střední školy · Kurzy a firemní vzdělávání</p><div class="content-sections">'+sections.join('')+'</div>');
+const html=template.replace('{{CONTENT}}',hero+benefits+installNote+'<div class="content-sections">'+sections.join('')+'</div>');
 await mkdir('dist/assets',{recursive:true});
 await writeFile('dist/index.html',html);
 await copyFile('style.css','dist/style.css');
