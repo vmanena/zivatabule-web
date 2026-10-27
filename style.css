@@ -66,3 +66,12 @@
 .content-section>p:last-child>a:only-child:hover,.content-section>p:last-child>a:only-child:focus-visible{color:#fff;background:#0d5138}
 .section-1>p:last-child>a:only-child:hover,.section-1>p:last-child>a:only-child:focus-visible{color:#0b5035;background:#e2f4e8}
 .hero p:nth-of-type(3) a:first-child:hover,.hero p:nth-of-type(3) a:first-child:focus-visible{color:#fff;background:#0d5138}
+
+/* School and company support cards: understated icons, aligned CTAs */
+.content-section.section-2,.content-section.section-3{display:flex;flex-direction:column;align-items:flex-start;padding:clamp(28px,3.2vw,42px)}
+.support-card-icon{width:58px;height:58px;flex:0 0 58px;display:grid;place-items:center;margin-bottom:24px;border-radius:16px;background:#d6eadd;color:#155b43;border:1px solid #c7e2d1}
+.support-card-icon svg{width:33px;height:33px;display:block}
+.section-3 .support-card-icon{background:#f8efd7;border-color:#f0e3bd;color:#836b28}
+.section-2>p:last-child,.section-3>p:last-child{margin-top:auto;padding-top:20px}
+.section-2>p:last-child>a:only-child,.section-3>p:last-child>a:only-child{margin-bottom:0}
+@media(max-width:800px){.support-card-icon{margin-bottom:18px}}
