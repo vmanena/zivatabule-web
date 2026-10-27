@@ -6,6 +6,8 @@
 
 [Vyzkoušet Živou tabuli](https://zivatabule.cz) · [Návody a inspirace do výuky](https://tipy.zivatabule.cz)
 
+**Živou tabuli provozuje a vyvíjí [Václav Maněna](https://manena.info) společně s dalšími učiteli z praxe.** Vycházíme z vlastních zkušeností s výukou a vytváříme nástroje, které sami potřebujeme a používáme.
+
 ## Od základní školy až po firemní školení
 
 Živá tabule najde využití na **základních i středních školách**. Pomáhá učitelům zapojovat žáky, organizovat aktivity a usnadňovat každodenní výuku.
