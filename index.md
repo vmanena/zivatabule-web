@@ -26,7 +26,7 @@ A nemusí zůstat jen ve škole. Hlasování, časovač, losování, rozdělová
 
 Živou tabuli mohou vaši učitelé používat hned, bez školních účtů, instalace a reklam. Pokud projekt podpoříte jako škola, přispějete na jeho provoz a další rozvoj. **Škola dostane běžnou fakturu a jako poděkování za podporu nabízíme možnost 45minutového online zaškolení pedagogického sboru.**
 
-Školní podporu nabízíme ve variantách **1 000, 2 000 nebo 3 000 Kč**. Neplatíte za přístup k nástrojům – ten zůstává zdarma pro všechny.
+Školní podporu nabízíme ve variantách **2 500, 5 000 nebo 10 000 Kč**. Neplatíte za přístup k nástrojům – ten zůstává zdarma pro všechny.
 
 [Podpořit projekt jako škola](https://zivatabule.cz/podpora)
 
