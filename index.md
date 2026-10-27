@@ -38,9 +38,9 @@ Nemusíte být škola, abyste pomohli dobrému nástroji dostat se do tříd. M�
 
 ## Už v tom nejsme sami
 
-Živou tabuli podporují jednotlivci, školy i **Pedagogická fakulta Univerzity Palackého v Olomouci**. Mezi školní podporovatele patří [ZŠ Úprkova v Hradci Králové](https://zsuprkova.cz/), [4. ZŠ Cheb](https://www.4zscv.cz/), [ZŠ a MŠ Březová](https://skolybrezova.eu/) a ZŠ Křešice.
+Živá tabule žije i díky školám a institucím, které podporují její provoz a rozvoj. **Děkujeme!**
 
-Děkujeme všem, kdo nám pomáhají. Díky vám můžeme Živou tabuli dál provozovat a zlepšovat.
+Děkujeme také všem jednotlivcům, kteří nám pomáhají udržet Živou tabuli zdarma pro všechny.
 
 ## Chcete se nejdřív podívat?
 
