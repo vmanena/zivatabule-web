@@ -15,3 +15,33 @@
 
 /* Mobile: stack hero actions, remove the inline separator */
 @media(max-width:600px){.hero .hero-copy p:nth-of-type(3){display:flex;flex-direction:column;align-items:stretch;gap:12px;font-size:0;line-height:1.35}.hero .hero-copy p:nth-of-type(3) a{display:block;width:100%;margin:0;font-size:1rem;text-align:center}.hero .hero-copy p:nth-of-type(3) a:first-child{padding:14px 18px}.hero .hero-copy p:nth-of-type(3) a:last-child{padding:10px 12px}}
+
+/* Illustrated product hero: real HTML/CSS, not a flattened image */
+.hero{position:relative;grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);gap:24px;background:radial-gradient(circle at 75% 22%,#d4f0df 0 13%,transparent 13.2%),radial-gradient(circle at 96% 82%,#d4f0df 0 12%,transparent 12.2%),linear-gradient(130deg,#f7fcf8,#eaf8ee);overflow:hidden}
+.hero-copy{position:relative;z-index:2;min-width:0}
+.hero h1{font-size:clamp(2.4rem,4.1vw,4.1rem);line-height:1.09;letter-spacing:-.052em}
+.hero .hero-copy p:nth-of-type(3) a:first-child{border-radius:15px;padding:14px 21px}
+.device-stage{position:relative;width:100%;min-height:390px;display:flex;align-items:center;justify-content:center;padding:25px 35px 25px 0}
+.laptop{position:relative;width:95%;transform:perspective(900px) rotateY(-7deg) rotateX(3deg);filter:drop-shadow(0 20px 20px #154e3b36)}
+.laptop-screen{border:12px solid #182a2d;border-bottom-width:16px;border-radius:18px 18px 7px 7px;background:#f6fcf8;overflow:hidden;aspect-ratio:1.35}
+.device-appbar{background:#00535a;color:white;font-weight:800;display:flex;justify-content:space-between;align-items:center;padding:9px 13px;font-size:clamp(10px,1.2vw,16px)}
+.device-tools{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;padding:12px}
+.device-tool{background:linear-gradient(#fff,#eef9f2);border:1px solid #d5e8db;border-radius:9px;min-width:0;min-height:64px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-align:center;color:#19764b}
+.device-tool b{font-size:clamp(17px,2vw,27px);line-height:1.1;font-weight:700}
+.device-tool small{font-size:clamp(7px,.8vw,11px);font-weight:750;color:#173d30;line-height:1.15}
+.laptop-base{height:15px;background:linear-gradient(#e3e7e6,#a4b3b1);border-radius:2px 2px 55% 55%;width:111%;margin-left:-5.5%;box-shadow:0 7px 8px #123c2b20}
+.phone{position:absolute;right:0;bottom:20px;width:29%;height:70%;max-height:300px;background:#17292c;border:7px solid #17292c;border-radius:28px;box-shadow:0 16px 26px #102c2540;transform:rotate(3deg);overflow:hidden}
+.phone-notch{position:absolute;z-index:2;top:0;left:32%;width:36%;height:10px;background:#17292c;border-radius:0 0 9px 9px}
+.phone-screen{height:100%;background:#f4fbf6;border-radius:20px;overflow:hidden;padding-top:6px}
+.phone .device-appbar{font-size:clamp(8px,.9vw,12px);padding:12px 6px 9px}
+.phone .device-tools{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;padding:8px 5px}
+.phone .device-tool{min-height:62px;padding:3px 1px}
+.phone .device-tool b{font-size:19px}
+.phone .device-tool small{font-size:8px;overflow-wrap:anywhere}
+.benefits{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;padding:25px 8px 12px;margin-bottom:10px}
+.benefits>div{display:flex;align-items:flex-start;gap:12px;min-width:0}
+.benefits>div>span{color:#16804c;font-size:2rem;line-height:1.1;font-weight:700}
+.benefits p{margin:0;line-height:1.35}.benefits strong{display:block;font-size:1rem}.benefits small{display:block;color:#47665a;font-size:.85rem;margin-top:4px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.device-stage{max-width:630px;margin:auto;min-height:350px}.benefits{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.hero{gap:10px}.hero h1{font-size:clamp(2rem,8vw,2.8rem)}.device-stage{min-height:260px;padding:10px 22px 15px 0}.laptop-screen{border-width:8px;border-bottom-width:11px}.device-tools{gap:4px;padding:7px}.device-tool{min-height:46px}.device-tool b{font-size:16px}.device-tool small{font-size:7px}.phone{width:31%;height:74%;bottom:8px;border-width:5px;border-radius:19px}.phone-screen{border-radius:14px}.phone .device-appbar{font-size:8px;padding:10px 3px 6px}.phone .device-tools{gap:3px;padding:5px 3px}.phone .device-tool{min-height:38px}.phone .device-tool b{font-size:13px}.phone .device-tool small{font-size:6px}.benefits{gap:18px 10px;padding:22px 0}.benefits>div{gap:7px}.benefits>div>span{font-size:1.5rem}.benefits strong{font-size:.9rem}.benefits small{font-size:.76rem}}
+@media(max-width:370px){.benefits{grid-template-columns:1fr}.device-stage{min-height:225px}}
