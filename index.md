@@ -30,7 +30,9 @@ A nemusí zůstat jen ve škole. Hlasování, časovač, losování, rozdělová
 
 ## Jste firma? I vy můžete pomoci školám.
 
-Nemusíte být škola, abyste pomohli dobrému nástroji dostat se do tříd. Můžete přispět na provoz a vývoj Živé tabule nebo se s námi domluvit na podpoře vybrané školy. Na podporu vystavíme běžnou fakturu a jako poděkování nabízíme také možnost 45minutového online zaškolení vašich zaměstnanců či interních lektorů. Konkrétní podobu spolupráce společně vymyslíme; žádné hotové sponzorské balíčky vám nechceme vnucovat.
+Nemusíte být škola, abyste pomohli dobrému nástroji dostat se do tříd. Můžete přispět na provoz a vývoj Živé tabule nebo se s námi domluvit na podpoře vybrané školy. Na podporu vystavíme běžnou fakturu a jako poděkování nabízíme možnost 45minutového online zaškolení vašich zaměstnanců či interních lektorů.
+
+Konkrétní podobu spolupráce společně vymyslíme. Žádné hotové sponzorské balíčky vám nechceme vnucovat.
 
 [Ozvat se kvůli podpoře projektu](https://zivatabule.cz/podpora)
 
