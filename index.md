@@ -1,33 +1,43 @@
-# Živá tabule. Praktické nástroje pro každou třídu.
+# Živá tabule. Praktické nástroje, které učitelům usnadňují práci.
 
-**Bez účtu. Bez reklam. Bez sledování. Zdarma pro všechny učitele.**
+**Bez účtu. Bez reklam. Bez sledování. Pro všechny zdarma.**
 
-Živá tabule pomáhá učitelům zvládnout každodenní práci ve třídě. Časovač, hlasování, losování, skupiny, QR kódy a další pomůcky najdete na jednom místě.
+Časovač, hlasování, losování, rozdělování do skupin, QR kódy a další drobnosti, které se ve třídě hodí každý den. Všechno na jednom místě, bez registrace a zbytečných překážek.
 
-[Vyzkoušet Živou tabuli](https://zivatabule.cz) · [Prohlédnout návody a inspiraci](https://tipy.zivatabule.cz)
+[Vyzkoušet Živou tabuli](https://zivatabule.cz) · [Návody a inspirace do výuky](https://tipy.zivatabule.cz)
 
-## Pro vedení škol
+## Funguje ve třídě. A chceme, aby fungovala dál.
 
-Učitelé získají praktický nástroj bez registrace. Škola může podpořit jeho provoz a další rozvoj. Součástí školní podpory může být také krátké online školení pedagogického sboru.
+Živou tabuli vytváříme pro učitele, ne pro reklamu. **Nechceme na učitelích vydělávat, ale nemůžeme její provoz a vývoj donekonečna dotovat.** Hosting, údržba i další nástroje něco stojí. Proto hledáme školy, jednotlivce a firmy, kteří nám pomohou udržet Živou tabuli dostupnou pro všechny.
 
-[Možnosti podpory pro školy](https://zivatabule.cz/podpora)
+[Pomoci Živé tabuli zůstat zdarma](https://zivatabule.cz/podpora)
 
-## Pro firmy a partnery
+## Vedete školu? Pomozte nám pomáhat učitelům.
 
-Pomozte dostat užitečné digitální nástroje do dalších tříd. Podpořte provoz Živé tabule nebo se s námi domluvte na podpoře škol. Konkrétní podobu spolupráce rádi probereme.
+Živou tabuli mohou vaši učitelé používat hned, bez školních účtů, instalace a reklam. Pokud projekt podpoříte jako škola, přispějete na jeho provoz a další rozvoj. **Součástí školní podpory je také 45minutové online školení pedagogického sboru.**
 
-[Zjistit možnosti podpory](https://zivatabule.cz/podpora)
+Školní podporu nabízíme ve variantách **1 000, 2 000 nebo 3 000 Kč**. Neplatíte za přístup k nástrojům – ten zůstává zdarma pro všechny.
 
-## Za projektem stojí učitelé
+[Podpořit projekt jako škola](https://zivatabule.cz/podpora)
 
-Živá tabule vzniká z každodenních potřeb výuky. Díky podporovatelům ji můžeme udržovat dostupnou zdarma a dál rozvíjet.
+## Jste firma? I vy můžete pomoci školám.
 
-Mezi podporovateli jsou první školy i Pedagogická fakulta Univerzity Palackého v Olomouci.
+Nemusíte být škola, abyste pomohli dobrému nástroji dostat se do tříd. Můžete přispět na provoz a vývoj Živé tabule nebo se s námi domluvit na podpoře vybrané školy. Konkrétní podobu spolupráce společně vymyslíme; žádné hotové sponzorské balíčky vám nechceme vnucovat.
 
-## Podívejte se blíž
+[Ozvat se kvůli podpoře projektu](https://zivatabule.cz/podpora)
 
-[Novinky a příběhy ze zákulisí](https://blog.zivatabule.cz) · [Návody a inspirace](https://tipy.zivatabule.cz) · [Spustit aplikaci](https://zivatabule.cz)
+## Už v tom nejsme sami
+
+Živou tabuli podporují jednotlivci, školy i **Pedagogická fakulta Univerzity Palackého v Olomouci**. Mezi školní podporovatele patří [ZŠ Úprkova v Hradci Králové](https://zsuprkova.cz/), [4. ZŠ Cheb](https://www.4zscv.cz/), [ZŠ a MŠ Březová](https://skolybrezova.eu/) a ZŠ Křešice.
+
+Děkujeme všem, kdo nám pomáhají. Díky vám můžeme Živou tabuli dál provozovat a zlepšovat.
+
+## Chcete se nejdřív podívat?
+
+[Spustit Živou tabuli](https://zivatabule.cz) · [Praktické návody a inspirace](https://tipy.zivatabule.cz) · [Novinky a zákulisí vývoje](https://blog.zivatabule.cz)
 
 ---
 
-*Živá tabule je pro všechny zdarma. Pomozte nám, aby to tak zůstalo.*
+**Živá tabule je pro všechny zdarma. Pomozte nám, aby to tak zůstalo.**
+
+[Podpořit provoz a rozvoj](https://zivatabule.cz/podpora)
