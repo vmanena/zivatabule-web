@@ -38,3 +38,6 @@ await writeFile('dist/index.html',html);
 await copyFile('style.css','dist/style.css');
 await copyFile('assets/ziva_tabule_logo.png','dist/assets/ziva_tabule_logo.png');
 console.log('Built dist/index.html');
+
+// Serve an actual robots.txt instead of the Pages HTML fallback.
+await writeFile('dist/robots.txt', 'User-agent: *\nAllow: /\n');
