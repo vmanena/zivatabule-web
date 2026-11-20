@@ -38,9 +38,9 @@ Konkrétní podobu spolupráce společně vymyslíme. Žádné hotové sponzorsk
 
 ## Už v tom nejsme sami
 
-Živá tabule žije i díky školám a institucím, které podporují její provoz a rozvoj. **Děkujeme!**
+Živá tabule žije i díky školám, institucím, firmám a jednotlivcům, kteří podporují její provoz a rozvoj. **Děkujeme!**
 
-Děkujeme také všem jednotlivcům, kteří nám pomáhají udržet Živou tabuli zdarma pro všechny.
+Děkujeme také všem dalším, kteří nám pomáhají udržet Živou tabuli zdarma pro všechny.
 
 ## Chcete se nejdřív podívat?
 
