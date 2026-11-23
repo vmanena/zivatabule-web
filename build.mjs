@@ -30,10 +30,12 @@ const supporterLogos=[
  ['pdf-upol-logo.png','Pedagogická fakulta Univerzity Palackého','https://www.pdf.upol.cz/'],
  ['ms-trebechovicka-logo.png','MŠ Třebechovická','https://www.mstrebechovicka.cz/'],
  ['boit-logo.png','BOIT','https://boit.cz/'],
- ['khanova-skola-logo.png','Khanova škola','https://khanovaskola.cz/',true],
- ['daniel-prazak-photo.jpg','Daniel Pražák','https://danielprazak.cz/',true]
+ ['khanova-skola-logo.png','Khanova škola','https://khanovaskola.cz/'],
+ ['daniel-prazak-photo.jpg','Daniel Pražák','https://danielprazak.cz/']
 ];
-const supporterGallery='<div class="supporter-logos" aria-label="Podporovatelé Živé tabule">'+supporterLogos.map(([file,name,url,showName])=>'<a class="supporter-logo" href="'+url+'" target="_blank" rel="noopener noreferrer" aria-label="'+name+'"><img src="/assets/supporters/'+file+'" alt="'+name+'" loading="lazy">'+(showName?'<span>'+name+'</span>':'')+'</a>').join('')+'</div>';
+const supporterGallery='<div class="supporter-logos" aria-label="Podporovatelé Živé tabule">'+supporterLogos.map(([file,name,url])=>
+  `<a class="supporter-logo" href="${url}" target="_blank" rel="noopener noreferrer"><img src="/assets/supporters/${file}" alt="" loading="lazy"><span>${name}</span></a>`
+).join('')+'</div>';
 const sections=chunks.map((chunk,i)=>'<section class="content-section section-'+i+'">'+((i===2||i===3)?'<div class="support-card-icon" aria-hidden="true" style="width:46px;height:46px;flex:0 0 46px;display:grid;place-items:center;overflow:hidden">'+cardIcon(i===2?'school':'company')+'</div>':'')+chunk+(i===4?supporterGallery:'')+'</section>');
 const html=template.replace('{{CONTENT}}',hero+benefits+'<div class="content-sections">'+sections.join('')+'</div>');
 await mkdir('dist/assets/supporters',{recursive:true});
