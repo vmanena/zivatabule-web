@@ -30,6 +30,7 @@ const supporterLogos=[
  ['pdf-upol-logo.png','Pedagogická fakulta Univerzity Palackého','https://www.pdf.upol.cz/'],
  ['ms-trebechovicka-logo.png','MŠ Třebechovická','https://www.mstrebechovicka.cz/'],
  ['boit-logo.png','BOIT','https://boit.cz/'],
+ ['khanova-skola-logo.png','Khanova škola','https://khanovaskola.cz/',true],
  ['daniel-prazak-photo.jpg','Daniel Pražák','https://danielprazak.cz/',true]
 ];
 const supporterGallery='<div class="supporter-logos" aria-label="Podporovatelé Živé tabule">'+supporterLogos.map(([file,name,url,showName])=>'<a class="supporter-logo" href="'+url+'" target="_blank" rel="noopener noreferrer" aria-label="'+name+'"><img src="/assets/supporters/'+file+'" alt="'+name+'" loading="lazy">'+(showName?'<span>'+name+'</span>':'')+'</a>').join('')+'</div>';
