@@ -60,7 +60,28 @@ for (const language of languages) {
  await mkdir(folder, {recursive: true});
  await writeFile(folder+'index.html', await renderPage(language));
 }
-if (international) await copyFile('language-detection.js', 'dist/language-detection.js');
+if (international) {
+  await copyFile('language-detection.js', 'dist/language-detection.js');
+  const supportPath = '/uk/pidtrymka/';
+  const title = 'ZiwaBoard підтримує українських учителів';
+  const description = 'ZiwaBoard доступний українською та безкоштовно. Користуйтеся інструментами на заняттях без реєстрації.';
+  const markdown = await readFile('locales/uk-support.md', 'utf8');
+  const values = {
+    ...locales.uk,
+    url: locales.uk.origin + supportPath,
+    title,
+    description,
+    socialTitle: title,
+    socialDescription: description,
+    tagline: description,
+    alternates: '',
+    languageDetection: '',
+    links: languageLinks('uk'),
+    CONTENT: `<article class="content-section section-0">${marked.parse(markdown)}</article>`,
+  };
+  await mkdir('dist' + supportPath, {recursive: true});
+  await writeFile('dist' + supportPath + 'index.html', template.replace(/{{(\w+)}}/g, (_, key) => values[key]));
+}
 await copyFile('style.css','dist/style.css');
 await copyFile('assets/ziva_tabule_logo.png','dist/assets/ziva_tabule_logo.png');
 console.log('Built ' + languages.join(', ') + ' in dist');
