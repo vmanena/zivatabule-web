@@ -102,8 +102,17 @@
 @media(max-width:380px){.supporter-logo{padding:10px}.supporter-logo img{height:60px}}
 
 .site-header .language-nav {
+  gap: 8px;
+  flex-wrap: nowrap;
+  min-width: 0;
+}
+.language-globe {
+  flex: none;
+}
+.language-links {
+  display: flex;
+  flex-wrap: wrap;
   gap: 6px 12px;
-  font-size: .9rem;
 }
 .language-nav a[aria-current="page"] {
   text-decoration: underline;
