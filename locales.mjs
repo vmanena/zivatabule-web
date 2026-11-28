@@ -135,19 +135,36 @@ for (const locale of Object.values(locales)) {
   locale.url = locale.origin + locale.path;
 }
 
+const languageFlags = {
+  cs: '<path fill="#fff" d="M0 0h60v40H0z"/><path fill="#d7141a" d="M0 20h60v20H0z"/><path fill="#11457e" d="M0 0l30 20L0 40z"/>',
+  sk: '<path fill="#fff" d="M0 0h60v40H0z"/><path fill="#0b4ea2" d="M0 13.3h60V40H0z"/><path fill="#ee1c25" d="M0 26.7h60V40H0z"/><path fill="#ee1c25" stroke="#fff" stroke-width="1.4" d="M11 10h17v13q0 8-8.5 13-8.5-5-8.5-13z"/><path stroke="#fff" stroke-width="2" d="M19.5 13v16m-4-11h8m-9 5h10"/><path fill="#0b4ea2" d="M12 27q3-4 5-1 2.5-5 5-1 3-3 5 2-2 5-7.5 8-5.5-3-7.5-8z"/>',
+  de: '<path d="M0 0h60v40H0z"/><path fill="#d00" d="M0 13.3h60V40H0z"/><path fill="#ffce00" d="M0 26.7h60V40H0z"/>',
+  en: '<path fill="#012169" d="M0 0h60v40H0z"/><path stroke="#fff" stroke-width="8" d="m0 0 60 40m0-40L0 40"/><path stroke="#c8102e" stroke-width="3" d="M0 0l30 20m30 20L30 20M60 0 30 20M0 40l30-20"/><path stroke="#fff" stroke-width="13" d="M30 0v40M0 20h60"/><path stroke="#c8102e" stroke-width="7" d="M30 0v40M0 20h60"/>',
+  uk: '<path fill="#0057b7" d="M0 0h60v40H0z"/><path fill="#ffd700" d="M0 20h60v20H0z"/>',
+  pl: '<path fill="#fff" d="M0 0h60v40H0z"/><path fill="#dc143c" d="M0 20h60v20H0z"/>',
+};
+
 export function languageLinks(language) {
-  const links = Object.values(locales).map((locale) => {
-    const href = locale.origin === locales[language].origin ? locale.path : locale.url;
-    const current = locale.lang === language ? ' aria-current="page"' : '';
-    return `<a href="${href}" lang="${locale.lang}" hreflang="${locale.lang}"${current}>${locale.name}</a>`;
+  const activeLocale = locales[language];
+  const links = Object.entries(languageFlags).map(([code, flag]) => {
+    const locale = locales[code];
+    const href = locale.origin === activeLocale.origin ? locale.path : locale.url;
+    const current = code === language ? ' aria-current="page"' : '';
+    return `<a href="${href}" lang="${code}" hreflang="${code}"${current}>
+      <svg class="language-flag" viewBox="0 0 60 40" aria-hidden="true" focusable="false">${flag}</svg>
+      <span>${locale.name}</span>
+    </a>`;
   }).join('');
-  return `<nav class="language-nav" aria-label="${locales[language].languageLabel}">
-    <svg class="language-globe" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false">
-      <circle cx="12" cy="12" r="9"/>
-      <ellipse cx="12" cy="12" rx="4" ry="9"/>
-      <path d="M3 12h18"/>
-    </svg>
-    <div class="language-links">${links}</div>
+  return `<nav class="language-nav" aria-label="${activeLocale.languageLabel}">
+    <details class="language-picker">
+      <summary aria-label="${activeLocale.languageLabel}: ${activeLocale.name}">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path d="M3 5h11m-5.5-2v2m3 0c-.5 4-3.5 7-8 9m2-6c1 2 3 4 5 5m2.5 8 4-10 4 10m-6.5-3h5"/>
+        </svg>
+        ${language.toUpperCase()}
+      </summary>
+      <div class="language-links">${links}</div>
+    </details>
   </nav>`;
 }
 
