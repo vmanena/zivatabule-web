@@ -2,7 +2,7 @@ import {readFile,writeFile,mkdir,copyFile,rm} from 'node:fs/promises';
 import {marked} from 'marked';
 import {locales, languageLinks, alternates} from './locales.mjs';
 const international = process.argv.includes('--international');
-const languages = international ? ['en', 'sk'] : ['cs'];
+const languages = international ? Object.keys(locales).filter((language) => language !== 'cs') : ['cs'];
 
 const template=await readFile('template.html','utf8');
 marked.setOptions({gfm:true,breaks:false});
