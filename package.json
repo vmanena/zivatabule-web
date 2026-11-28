@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "build": "node build.mjs"
+    "build": "node build.mjs",
+    "build:international": "node build.mjs --international"
   },
   "dependencies": {
     "marked": "^15.0.0"
