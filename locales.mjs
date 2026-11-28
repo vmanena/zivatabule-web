@@ -47,7 +47,7 @@ export const locales = {
   },
   sk: {
     lang: 'sk', name: 'Slovenčina', brand: 'Živá tabula', origin: internationalOrigin, path: '/sk/',
-    ogLocale: 'sk_SK', app: 'https://ziwaboard.com/', appText: 'Otvoriť Živú tabulu',
+    ogLocale: 'sk_SK', app: 'https://ziwaboard.com/', appText: 'Aplikácia',
     title: 'Živá tabula – praktické nástroje pre učiteľov a lektorov',
     description: 'Bezplatné nástroje na vyučovanie. Hlasovanie, časovač a rozdelenie do skupín priamo v prehliadači.',
     socialTitle: 'Živá tabula – praktické nástroje na vyučovanie',
@@ -55,7 +55,7 @@ export const locales = {
     socialDescription: 'Praktické nástroje na vyučovanie zadarmo, priamo v prehliadači a bez registrácie.',
     logoAlt: 'Logo Živej tabule', appLabel: 'Otvoriť aplikáciu Živá tabula',
     navLabel: 'Hlavná navigácia', languageLabel: 'Jazyk webu', footer: 'Živá tabula · Pre učiteľov a školy',
-    navLinks: '',
+    navLinks: '<a href="https://tipy.zivatabule.cz">Návody a inšpirácia</a><a href="https://blog.zivatabule.cz">Blog</a>',
     device: 'Ilustrácia Živej tabule na notebooku a mobile',
     tools: ['Hlasovanie', 'Časovač', 'Žrebovanie', 'Skupiny', 'QR kódy', 'Prenos súborov', 'Poznámky', 'Bzučiak', 'Hodiny'],
     benefitsLabel: 'Výhody Živej tabule',
