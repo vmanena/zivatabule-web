@@ -136,11 +136,19 @@ for (const locale of Object.values(locales)) {
 }
 
 export function languageLinks(language) {
-  return `<nav class="language-nav" aria-label="${locales[language].languageLabel}">${Object.values(locales).map((locale) => {
+  const links = Object.values(locales).map((locale) => {
     const href = locale.origin === locales[language].origin ? locale.path : locale.url;
     const current = locale.lang === language ? ' aria-current="page"' : '';
     return `<a href="${href}" lang="${locale.lang}" hreflang="${locale.lang}"${current}>${locale.name}</a>`;
-  }).join('')}</nav>`;
+  }).join('');
+  return `<nav class="language-nav" aria-label="${locales[language].languageLabel}">
+    <svg class="language-globe" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="9"/>
+      <ellipse cx="12" cy="12" rx="4" ry="9"/>
+      <path d="M3 12h18"/>
+    </svg>
+    <div class="language-links">${links}</div>
+  </nav>`;
 }
 
 export const alternates = Object.values(locales)
