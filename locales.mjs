@@ -148,7 +148,8 @@ export function languageLinks(language) {
   const activeLocale = locales[language];
   const links = Object.entries(languageFlags).map(([code, flag]) => {
     const locale = locales[code];
-    const href = locale.origin === activeLocale.origin ? locale.path : locale.url;
+    const destination = locale.origin === activeLocale.origin ? locale.path : locale.url;
+    const href = code === 'en' ? destination + '?lang=en' : destination;
     const current = code === language ? ' aria-current="page"' : '';
     return `<a href="${href}" lang="${code}" hreflang="${code}"${current}>
       <svg class="language-flag" viewBox="0 0 60 40" aria-hidden="true" focusable="false">${flag}</svg>

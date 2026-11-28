@@ -30,7 +30,8 @@ async function renderPage(language) {
     `<a class="supporter-logo" href="${url}" target="_blank" rel="noopener noreferrer"><img src="/assets/supporters/${file}" alt="" loading="lazy"><span>${name}</span></a>`
   ).join('')+'</div>' : '';
   const sections=chunks.map((chunk,i)=>'<section class="content-section section-'+i+'">'+((language === 'cs' && (i===2||i===3))?'<div class="support-card-icon" aria-hidden="true" style="width:46px;height:46px;flex:0 0 46px;display:grid;place-items:center;overflow:hidden">'+cardIcon(i===2?'school':'company')+'</div>':'')+chunk+(i===4?supporterGallery:'')+'</section>');
-  const values = { ...locale, alternates, links: languageLinks(language), CONTENT: hero+benefits+'<div class="content-sections">'+sections.join('')+'</div>' };
+  const languageDetection = international ? '<script src="/language-detection.js"></script>' : '';
+  const values = { ...locale, alternates, languageDetection, links: languageLinks(language), CONTENT: hero+benefits+'<div class="content-sections">'+sections.join('')+'</div>' };
   return template.replace(/{{(\w+)}}/g, (_, key) => values[key]);
 }
 
@@ -59,6 +60,7 @@ for (const language of languages) {
  await mkdir(folder, {recursive: true});
  await writeFile(folder+'index.html', await renderPage(language));
 }
+if (international) await copyFile('language-detection.js', 'dist/language-detection.js');
 await copyFile('style.css','dist/style.css');
 await copyFile('assets/ziva_tabule_logo.png','dist/assets/ziva_tabule_logo.png');
 console.log('Built ' + languages.join(', ') + ' in dist');
