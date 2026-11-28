@@ -26,6 +26,6 @@ Oba projekty v Cloudflare Pages používají stejný repozitář a větev `main`
 | `web.zivatabule.cz` | `npm run build` | `dist` |
 | `web.ziwaboard.com` | `npm run build:international` | `dist` |
 
-Na mezinárodním webu je angličtina na `/` a slovenština na `/sk/`. Texty stránek jsou v `locales/`, texty navigace, náhledu a metadat v `locales.mjs`. Mezinárodní verze odkazují na Buy Me a Coffee.
+Na mezinárodním webu je angličtina na `/` a další jazyky na `/sk/` (slovenština), `/de/` (němčina), `/pl/` (polština) a `/uk/` (ukrajinština). Texty stránek jsou v `locales/`, texty navigace, náhledu a metadat v `locales.mjs`. Mezinárodní verze odkazují na Buy Me a Coffee.
 
-Před zveřejněním českých odkazů ověřte anglickou i slovenskou stránku na doméně `web.ziwaboard.com`.
+Před zveřejněním českých odkazů ověřte všechny jazykové verze na doméně `web.ziwaboard.com`.
