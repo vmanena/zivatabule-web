@@ -6,6 +6,20 @@ const languages = international ? Object.keys(locales).filter((language) => lang
 
 const template=await readFile('template.html','utf8');
 marked.setOptions({gfm:true,breaks:false});
+function renderTemplate(language, values) {
+  const locale = locales[language];
+  const showAppNavigation = language === 'cs' || language === 'sk';
+  const header = {
+    brandHref: showAppNavigation ? locale.app : locale.path,
+    brandLabel: showAppNavigation ? locale.appLabel : locale.brand,
+    headerNavigation: showAppNavigation
+      ? `<nav aria-label="${locale.navLabel}"><a href="${locale.app}">${locale.appText}</a>${locale.navLinks}</nav>`
+      : '',
+  };
+  const page = { ...values, ...header };
+  return template.replace(/{{(\w+)}}/g, (_, key) => page[key]);
+}
+
 async function renderPage(language) {
   const locale = locales[language];
   const markdown = await readFile(language === 'cs' ? 'index.md' : `locales/${language}.md`, 'utf8');
@@ -32,7 +46,7 @@ async function renderPage(language) {
   const sections=chunks.map((chunk,i)=>'<section class="content-section section-'+i+'">'+((language === 'cs' && (i===2||i===3))?'<div class="support-card-icon" aria-hidden="true" style="width:46px;height:46px;flex:0 0 46px;display:grid;place-items:center;overflow:hidden">'+cardIcon(i===2?'school':'company')+'</div>':'')+chunk+(i===4?supporterGallery:'')+'</section>');
   const languageDetection = international ? '<script src="/language-detection.js"></script>' : '';
   const values = { ...locale, alternates, languageDetection, links: languageLinks(language), CONTENT: hero+benefits+'<div class="content-sections">'+sections.join('')+'</div>' };
-  return template.replace(/{{(\w+)}}/g, (_, key) => values[key]);
+  return renderTemplate(language, values);
 }
 
 const supporterLogos=[
@@ -80,7 +94,7 @@ if (international) {
     CONTENT: `<article class="content-section section-0">${marked.parse(markdown)}</article>`,
   };
   await mkdir('dist' + supportPath, {recursive: true});
-  await writeFile('dist' + supportPath + 'index.html', template.replace(/{{(\w+)}}/g, (_, key) => values[key]));
+  await writeFile('dist' + supportPath + 'index.html', renderTemplate('uk', values));
 }
 await copyFile('style.css','dist/style.css');
 await copyFile('assets/ziva_tabule_logo.png','dist/assets/ziva_tabule_logo.png');
